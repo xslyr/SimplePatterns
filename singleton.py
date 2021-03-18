@@ -11,8 +11,8 @@ class Singleton(object):
 	
 	def __new__(cls):
 		if cls._instance is None:
-			print('Creating a singleton2 class...')
-			cls._instance = super(Singleton2,cls).__new__(cls)
+			print('Creating a singleton class...')
+			cls._instance = super(Singleton,cls).__new__(cls)
 			
 		return cls._instance
 		
